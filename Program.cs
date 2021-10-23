@@ -49,7 +49,14 @@ namespace OOPCS_Revision
             jane.sayAge();
             jane.sayHeight();
 
+            //stats
+            int[] data = new int[] { 10, 5, 8, 19, -3, 2, 14 };
+            Stats stat = new Stats(data);
 
+            Console.WriteLine(stat.Max());
+            Console.WriteLine(stat.Min());
+            Console.WriteLine(stat.Mean());
+            Console.WriteLine(stat.SD(true));
 
 
             //Bonus
