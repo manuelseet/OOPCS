@@ -20,7 +20,7 @@ namespace OOPCS_Revision
             for(int i = 0; i<10; i++)
             {
                 lamp.turnOn();
-                Console.WriteLine("Color: " + lamp.getCurrColor());
+                //Console.WriteLine("Color: " + lamp.getCurrColor());
                 lamp.turnOff();
             }
 
@@ -31,7 +31,7 @@ namespace OOPCS_Revision
             for (int i = 0; i < 25; i++)
             {
                 llled.turnOn();
-                Console.WriteLine($"Turn {i+1} Color: " + llled.getColor());
+                //Console.WriteLine($"Turn {i+1} Color: " + llled.getColor());
                 llled.turnOff();
             }
 
@@ -39,32 +39,57 @@ namespace OOPCS_Revision
             Person gary = new Person("gary", "tan", 24, 1.7f);
             Person jane = new Person("jane", "lee", 45, 1.4f);
 
-            gary.sayHi();
-            gary.sayAge();
-            gary.sayHeight();
+            //gary.sayHi();
+            //gary.sayAge();
+           // gary.sayHeight();
 
             Console.WriteLine();
 
-            jane.sayHi();
-            jane.sayAge();
-            jane.sayHeight();
+            //jane.sayHi();
+            //jane.sayAge();
+            //jane.sayHeight();
 
             //stats
             int[] data = new int[] { 10, 5, 8, 19, -3, 2, 14 };
             Stats stat = new Stats(data);
 
-            Console.WriteLine(stat.Max());
-            Console.WriteLine(stat.Min());
-            Console.WriteLine(stat.Mean());
-            Console.WriteLine(stat.SD(true));
+            //Console.WriteLine(stat.Max());
+            //Console.WriteLine(stat.Min());
+            //Console.WriteLine(stat.Mean());
+            //Console.WriteLine(stat.SD(true));
+
+
+            //EvenNumber
+            int[] data1 = { 11, 9, 8, 2, 5, 12 };
+            EvenNumber num = new EvenNumber();
+
+            for (int i = 0; i < data1.Length; i++)
+            {
+                if (num.SetEvenNumber(data1[i]))
+                {
+                    //Console.WriteLine("Updated Succeeded");
+                    //Console.WriteLine("Value is now " + num.GetValue() + ".");
+                }
+                else
+                {
+                    //Console.WriteLine("Updated failed");
+                    //Console.WriteLine(data[i] + " is not Even.");
+                }
+                Console.WriteLine("");
+            }
+
+
+            //PersonProp
+            PersonProp mike = new PersonProp("mike", "tan", 15, 1.2f);
+            Console.WriteLine($"{mike.FirstName} {mike.LastName} {mike.Age} {mike.Height}");
 
 
             //Bonus
             SavingsAccount sa1 = new SavingsAccount("Diego");
             SavingsAccount.baseInterestRate = 1.00f;
             SavingsAccount sa2 = new SavingsAccount("Manny");
-            sa1.printIR();
-            sa2.printIR();
+            //sa1.printIR();
+            //sa2.printIR();
         }
 
         public class SavingsAccount
