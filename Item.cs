@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace OOPCS_Revision
 {
-    public interface ISyncable
+    class Item
     {
-        string GetSyncString();
+        protected string id;
+
+        public Item()
+        {
+            id = Guid.NewGuid().ToString();
+        }
     }
 }

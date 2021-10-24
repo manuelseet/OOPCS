@@ -45,8 +45,11 @@
   <ItemGroup>
     <Compile Include="Circle.cs" />
     <Compile Include="ColorLamp.cs" />
+    <Compile Include="Email.cs" />
     <Compile Include="EvenNumber.cs" />
+    <Compile Include="Event.cs" />
     <Compile Include="ISyncable.cs" />
+    <Compile Include="Item.cs" />
     <Compile Include="LED.cs" />
     <Compile Include="LimitedLifeLED.cs" />
     <Compile Include="Person.cs" />
